@@ -1,14 +1,10 @@
-# 🧭 Pokemon Explorer
+# Pokemon Explorer
 
-## 📌 Project Overview
+## Description:- 
 
 **Pokemon Explorer** is a web application that allows users to explore Pokemon data in an interactive and visually engaging way. The app integrates with a public API to fetch real-time data and provides features like search, filtering, and sorting using modern JavaScript techniques.
 
-📅 **Final Submission Deadline:** 10th April
-
----
-
-## 🔰 Introduction
+## Introduction:- 
 
 The objective of this project is to demonstrate:
 
@@ -25,7 +21,6 @@ This project uses the **PokeAPI** to display Pokémon data and allows users to i
 
 * **PokeAPI**: [https://pokeapi.co/](https://pokeapi.co/)
 * Provides detailed Pokemon data including:
-
   * Name
   * ID
   * Types
@@ -34,9 +29,7 @@ This project uses the **PokeAPI** to display Pokémon data and allows users to i
 
 ---
 
-## 🚀 Features
-
-### 🔍 Core Features (Milestone 3)
+## Features :- 
 
 * **Search**
 
@@ -52,26 +45,23 @@ This project uses the **PokeAPI** to display Pokémon data and allows users to i
     * Name
     * Base stats
 
-### 🎛️ Additional Features
+### Additional Features
 
-* ⭐ Add to Favorites (stored using Local Storage)
-* 🌙 Dark Mode / Light Mode Toggle
-* 📄 Pagination for large datasets
-* ⏳ Loading Indicators during API calls
+* Add to Favorites (stored using Local Storage)
+* Dark Mode / Light Mode Toggle
+* Pagination for large datasets
+* Loading Indicators during API calls
 
----
-
-## ⚙️ Technologies Used
+## Technologies Used
 
 * HTML5
-* CSS3 / Tailwind CSS (optional)
+* CSS3
 * JavaScript (ES6+)
 * Fetch API
 
 ---
 
-## ✅ Best Practices i will follow
-
+## Overview:- 
 * Modular and reusable code
 * Use of Array HOFs (`map`, `filter`, `sort`)
 * Clean and readable structure
