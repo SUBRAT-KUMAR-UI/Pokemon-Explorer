@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and discover Pokémon with stats, types, and artwork">
+  <title>Pokédex — Browse Pokémon</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="" width="28" height="28">
+        <span>Pokémon Explorer</span>
+      </div>
+      <div class="search-wrap" id="searchWrap">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search by name or number…" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Gotta catch 'em all.</h1>
+      <p class="hero-sub">Tap a card to peek at stats. Use the search bar to find your favourites.</p>
+    </section>
+
+    <div class="type-filters" id="typeFilters">
+      <button class="tf active" data-type="all">All</button>
+      <button class="tf" data-type="fire">🔥 Fire</button>
+      <button class="tf" data-type="water">💧 Water</button>
+      <button class="tf" data-type="grass">🌿 Grass</button>
+      <button class="tf" data-type="electric">⚡ Electric</button>
+      <button class="tf" data-type="psychic">🔮 Psychic</button>
+      <button class="tf" data-type="dragon">🐉 Dragon</button>
+      <button class="tf" data-type="poison">☠️ Poison</button>
+      <button class="tf" data-type="flying">🕊️ Flying</button>
+      <button class="tf" data-type="bug">🐛 Bug</button>
+      <button class="tf" data-type="normal">Normal</button>
+      <button class="tf" data-type="ghost">👻 Ghost</button>
+      <button class="tf" data-type="fairy">🧚 Fairy</button>
+      <button class="tf" data-type="fighting">🥊 Fighting</button>
+      <button class="tf" data-type="ground">Ground</button>
+      <button class="tf" data-type="rock">🪨 Rock</button>
+      <button class="tf" data-type="ice">❄️ Ice</button>
+      <button class="tf" data-type="steel">Steel</button>
+      <button class="tf" data-type="dark">🌑 Dark</button>
+    </div>
+
+    <div id="loader" class="loader">
+      <div class="pokeball-spinner"></div>
+      <p>Loading Pokémon…</p>
+    </div>
+
+    <div id="container" class="grid"></div>
+
+    <div id="emptyState" class="empty-state" style="display:none;">
+      <p>No Pokémon matched your search.</p>
+    </div>
+  </main>
+
+  <!-- Modal overlay for card details -->
+  <div id="modal" class="modal-overlay" style="display:none;">
+    <div class="modal-card" id="modalCard"></div>
+  </div>
+
+  <footer>
+    <p>Data from <a href="https://pokeapi.co" target="_blank" rel="noopener">PokéAPI</a> · Built for fun, not profit</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
